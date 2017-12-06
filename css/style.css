@@ -68,12 +68,12 @@ header p {
 }
 
 .gallery {
-  padding: 20px 0 300px;
+  padding: 0px 0 320px;
   position: relative;
   overflow: hidden;
 }
 .gallery ul {
-  padding-top: 50px;
+  padding-top: 20px;
   position: relative;
 }
 .gallery ul li {
@@ -257,6 +257,7 @@ body {
   border-radius: 3.6rem;
   margin: -1.8rem;
 }
+
 .twitter span {
   background-color: #4099ff;
 }
@@ -283,6 +284,7 @@ body {
   width: 3.6rem;
   z-index: 10;
 }
+
 .icon-button .icon-twitter {
   color: #4099ff;
 }
@@ -292,8 +294,66 @@ body {
 .icon-button .icon-google-plus {
   color: #fb3958;
 }
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus {
+
+i.fa.fa-twitter::before{
+  color: #4099ff;
+}
+
+i.fa.fa-facebook::before{
+  color: #3b5998;
+}
+
+i.fa.fa-instagram::before{
+  color: #fb3958;
+}
+
+.icon-button:hover i.fa.fa-twitter::before,
+.icon-button:hover i.fa.fa-facebook::before,
+.icon-button:hover i.fa.fa-instagram::before {
   color: white;
+}
+
+.hovertext {
+  position: absolute;
+    top: 5px;
+    width: 50%;
+    right: 5px;
+    text-align: right;
+    display: inline-block;
+    line-height: 18px;
+    color: white;
+    font-size: 14px;
+}
+
+a .hovertext:hover {
+  position: absolute;
+    top: 5px;
+    width: 50%;
+    right: 5px;
+    text-align: right;
+    display: inline-block;
+    line-height: 18px;
+    visibility:visible;
+    color: white;
+    font-size: 11px;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  border: solid white 3px;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  border-color: #E5D2CC;
+  color: #ffffff;
+  border-style: dotted;
 }
